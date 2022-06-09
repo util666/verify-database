@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"webpack --mode production"
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
@@ -12,12 +12,12 @@
   "description": "",
   "dependencies": {
     "@escook/express-joi": "^1.1.1",
-    "@hapi/joi": "^17.1.1",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "express-jwt": "^5.3.3",
     "joi": "^17.6.0",
+    "jon": "^0.2.0",
     "jsonwebtoken": "^8.5.1",
     "moment": "^2.29.3",
     "mysql": "^2.18.1",

@@ -176,10 +176,11 @@ exports.addChild = (req, res) => {
             config.dateTimeFormat((new Date()).valueOf() + 1000 * 60 * 60 * 24 * req.body.days),
             req.body.program,
             req.body.programName,
+            req.body.remarks || '',
         ]
         dataList.push(data)
     }
-    const sql = 'insert into user(id,creation_time,account,vip_time,program,programName) values ?'
+    const sql = 'insert into user(id,creation_time,account,vip_time,program,programName,remarks) values ?'
     db.query(sql, [dataList], (err, results) => {
         // 执行 SQL 语句失败
         if (err) return res.cc(err)
