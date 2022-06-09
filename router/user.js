@@ -22,7 +22,7 @@ router.post('/queryUser', userHandler.queryUser)
 router.post('/unbindDevice', userHandler.unbindDevice)
 
 // 卡密登录
-router.post('/loginUser', userHandler.loginUser)
+router.get('/loginUser', userHandler.loginUser)
 
 
 
