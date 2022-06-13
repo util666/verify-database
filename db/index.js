@@ -4,9 +4,9 @@ const {query} = require("express");
 
 // 创建数据库连接对象
 const db = mysql.createPool({
-    host:"47.98.229.173",//主机名（服务器地址）
+    host:"http://localhost:3000",//主机名（服务器地址）
     user:"root",//用户名
-    password:"410526.a",//密码
+    password:"root",//密码
     database:"database", //数据库名字
     port: '3306'
 })
